@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.muicss.com/mui-0.10.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Мобильное приложение</title>
+</head>
+<body>
+    <section id="container" class="container">
+        <div class="onboarding" id="onboarding">
+            <div class="panel">
+                <div class="board" id="board-1">
+                    <h1 class="title">Привет!</h1>
+                    <p>Это крутое мобилное приложение</p>
+                    <img src="./static/img/onboarding/onboarding-start.svg" alt="дерево и скамейка">
+                </div>
+                <div class="board" id="board-2">
+                    <h1 class="title">Идеи</h1>
+                    <p>С ним ты реалтзуешь все свои идеи</p>
+                    <img src="./static/img/onboarding/onboarding-brain.svg" alt="лицо киборга">
+                </div>
+                <div class="board" id="board-3">
+                    <h1 class="title">Стартуем 🚀</h1>
+                    <p>Начинай пользоваться нашим приложением</p>
+                    <img src="./static/img/onboarding/onboarding-rocket.svg" alt="ракета">
+                </div>
+                <div class="controls">
+                    <div class="board-map" id="board-map">
+                        <div class="active"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="next">
+                        <button 
+                            id="btn-onboarding-next"
+                            class="mui-btn mui-btn--raised mui-btn--danger btn-next"
+                        >Дальше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="authorization" id="authorization">
+            <div class="panel">
+                <div class="navbar" id="navbar-authorization">
+                    <span>Вход</span>
+                </div>
+                <form id="form-login">
+                    <h2>Вход 🚪</h2>
+                    <div class="mui-textfield">
+                        <input type="text" placeholder="Логин" name="login" autocomplete="off">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="password" placeholder="Пароль" name="password">
+                    </div>
+                    <button 
+                        class="mui-btn mui-btn--primary mui-btn--primary btn-form"
+                    >Войти</button>
+                </form>
+                <form>
+                    <h2>Регистрация 🐱</h2>
+                    <div class="mui-textfield">
+                        <input type="text" placeholder="Логин" autocomplete="off">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="password" placeholder="Пароль">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="password" placeholder="Повторите пароль">
+                    </div>
+                    <button 
+                        class="mui-btn mui-btn--primary mui-btn--primary btn-form"
+                    >Регистрация</button>
+                </form>
+                <form>
+                    <h2>Восстановление пароля 🛠</h2>
+                    <div class="mui-textfield">
+                        <input type="text" placeholder="Эл. почта" autocomplete="off">
+                    </div>
+                    <button 
+                        class="mui-btn mui-btn--primary mui-btn--primary btn-form"
+                    >Восстановить</button>
+                </form>
+                <div class="refs-form" id="refs-form">
+                    <div>
+                        <a href="#" id="btn-open-login">Вход</a>
+                    </div>
+                    <div>
+                        <a href="#" id="btn-open-reg">Регистрация</a>
+                    </div>
+                    <div>
+                        <a href="#" id="btn-open-reset">Восстановление пароля</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cabinet" id="cabinet">
+            <div class="navbar" id="navbar-cabinet">
+                <div>
+                    <img class="avatar" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f83306c-9659-420d-885e-b827164fedba/d8k5f0w-e9af3bef-e695-424c-9c00-b5ea1d538a70.jpg/v1/fill/w_800,h_800,q_75,strp/avatar_of_harry_potter__by_pollyaug00_d8k5f0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvN2Y4MzMwNmMtOTY1OS00MjBkLTg4NWUtYjgyNzE2NGZlZGJhXC9kOGs1ZjB3LWU5YWYzYmVmLWU2OTUtNDI0Yy05YzAwLWI1ZWExZDUzOGE3MC5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.U6J9TZKL0KYWkkqaVkTlE8bDbpyFoIQ60dYQmtEP7Hg" alt="user">
+                    <span></span>
+                </div>
+                <div class="navbar-btn" id="navbar-btn">
+                    <img src="./static/img/cabinet/menu/more_vert-24px.svg" alt="dots">
+                </div>
+            </div>
+            <div class="panel" id="friends">
+                <h2>Друзья</h2>
+                <ul class="friends-list" id="friends-list"></ul>
+            </div>
+            <div class="panel" id="add-friends">
+                <h2>Добавить друга</h2>
+                <form id="form-friend">
+                    <div class="mui-textfield">
+                        <input type="text" placeholder="Имя друга" name="friend-name" autocomplete="off">
+                    </div>
+                    <div class="mui-textfield">
+                        <input type="text" placeholder="Фотка друга" name="friend-avatar">
+                    </div>
+                    <button
+                        class="mui-btn mui-btn--primary mui-btn--primary btn-form"
+                    >Добавить</button>
+                </form>
+            </div>
+            <div class="panel" id="settings">
+                <h2>Настройки</h2>
+                <button 
+                    id="btn-clear-all"
+                    class="mui-btn mui-btn--danger mui-btn--danger btn-form"
+                >Очистить данные</button>
+            </div>
+            <menu class="menu_bottom">
+                <ul id="menu-bottom">
+                    <li class="active">
+                        <img src="./static/img/cabinet/menu/supervisor_account-24px.svg" alt="users">
+                    </li>
+                    <li>
+                        <img src="./static/img/cabinet/menu/group_add-24px.svg" alt="add user">
+                    </li>
+                    <li>
+                        <img src="./static/img/cabinet/menu/settings_applications-24px.svg" alt="settings">
+                    </li>
+                </ul>
+            </menu>
+            <div class="modal" id="modal">
+                <div class="modal-body">
+                    <p>Выйти из профиля</p>
+                    <button
+                        id="btn-logout"
+                        class="mui-btn mui-btn--primary mui-btn--primary btn-form"
+                    >Выйти</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./static/js/friends.js"></script>
+<script src="./static/js/script.js"></script>
+</html>

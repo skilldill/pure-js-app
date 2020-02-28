@@ -1,0 +1,253 @@
+body, .container {
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    position: relative;
+    padding: 40px 10px;
+}
+
+
+/* onboarding */
+
+.onboarding {
+    height: 100vh;
+}
+
+.onboarding
+.panel {
+    height: calc(100vh - 80px);
+}
+
+.board-map {
+    display: flex;
+    justify-content: center;
+}
+
+.board-map div {
+    margin: 0 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    border: 1px solid #F44336;
+}
+
+.board-map .active {
+    background-color: #F44336;
+}
+
+.next {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-next {
+    width: 114px;
+}
+
+.onboarding
+.controls {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+}
+
+.board {
+    text-align: center;
+}
+
+.board img {
+    width: 250px;
+    margin-top: 40px;
+}
+
+/* Authorization */
+.authorization {
+
+}
+
+.authorization
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2196F3;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.authorization
+form {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.authorization
+form .btn-form{
+    width: 100%;
+}
+
+.refs-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.refs-form div {
+    margin-top: 10px;
+}
+
+
+/* Cabinet */
+.cabinet {
+    position: relative;
+    height: 100vh;
+}
+
+.cabinet
+.navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(127, 21, 197);
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabinet
+.navbar span {
+    padding-left: 20px;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-btn {
+    margin-right: 20px;
+}
+
+.cabinet
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.cabinet
+.panel {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+}
+
+.menu_bottom {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(127, 21, 197);
+    
+}
+
+.menu_bottom ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_bottom ul li {
+    list-style-type: none;
+    padding: 10px;
+    height: 24px;
+    transition: all .3s;
+}
+
+.menu_bottom ul li:hover {
+    background-color: rgb(93, 15, 145);
+}
+
+.active {
+    background-color: rgb(93, 15, 145);
+}
+
+.modal {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: none;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-body button {
+    width: 100%;
+}
+
+/* Friends block */
+
+.friends {
+
+}
+
+.friends-list {
+    margin: 0;
+    padding: 0;
+}
+
+.friends-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.friends-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.friend-info {
+    margin-left: 20px;
+}
+
+.friend-info h3 {
+    margin: 0;
+}
+
+.online {
+    color: rgb(86, 126, 175);
+}
+
+.offline {
+    color: rgb(134, 134, 134);
+}
